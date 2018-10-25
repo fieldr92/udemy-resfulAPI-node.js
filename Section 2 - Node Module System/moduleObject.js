@@ -1,0 +1,1 @@
+console.log(module); // returns json object
