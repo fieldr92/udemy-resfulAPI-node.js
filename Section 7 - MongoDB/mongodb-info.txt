@@ -1,0 +1,29 @@
+To set up and run MongoDB
+
+- brew install mongodb
+- sudo mkdir -p /data/db                // make local database folders
+- sudo chown -R `id -un` /data/db       // give read/write permissions on folder --> NEEDED FOR MONGODB TO WORK
+- mongod                                // start Mongo Daemon - host process for the database (i.e. "start the MongoDB process and run in background")
+
+To connect to MongoDB via client
+
+- npm install mongoose                  // once installed, set up as per index.js
+- node index.js                         // at same time as running the mongod command above, which allows the client to connect to the database
+
+MongoDB operators and logic
+
+MongoDB Operators
+
+- $eq (===)
+- $ne (!==)
+- $gt (>)
+- $gte (>=)
+- $lt (<)
+- $lte (<=)
+- $in
+- $nin (not in)
+
+MongoDC Logical Operators
+
+- .or()
+- .and()
